@@ -6,7 +6,7 @@ import sys
 import pandas as pd
 
 # Page Title
-st.title("All About Modules and Packages in Python 📦")
+st.title("Modules and Packages📦")
 
 st.markdown("""
 Modules and packages are essential in Python for organizing code, reusing functionality, and accessing a rich ecosystem of libraries.  

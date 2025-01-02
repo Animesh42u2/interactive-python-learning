@@ -3,7 +3,7 @@ import re
 import textwrap
 
 # Page Title
-st.title("Mastering Strings in Python 🎉")
+st.title("Strings🎉")
 st.markdown("""
 Strings are one of the most powerful and versatile data types in Python.  
 This guide covers **everything about strings**, interactively! 🚀

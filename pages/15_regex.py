@@ -2,7 +2,7 @@ import streamlit as st
 import re
 
 # Page Title
-st.title("Master Regular Expressions in Python 🔍")
+st.title("Regular Expressions🔍")
 st.markdown("""
 Regular expressions (regex) are powerful tools for searching and manipulating text.  
 With Python's **`re` module**, you can use regex to solve complex text processing tasks efficiently. Let's dive in! 🚀

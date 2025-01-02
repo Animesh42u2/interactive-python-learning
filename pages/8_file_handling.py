@@ -4,7 +4,7 @@ from pathlib import Path
 from datetime import datetime
 
 # Page Title
-st.title("Mastering File Handling in Python 📝")
+st.title("File Handling📝")
 
 st.markdown("""
 File handling is an essential part of Python programming. It allows you to read, write, and manage files effectively.  

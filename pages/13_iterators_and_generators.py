@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Page Title
-st.title("Mastering Iterators and Generators in Python 🔄")
+st.title("Iterators and Generators🔄")
 
 st.markdown("""
 Iterators and generators are powerful tools in Python for managing sequences of data efficiently.  

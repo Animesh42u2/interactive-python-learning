@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 # Page Title
-st.title("Loops in Python 🔄")
+st.title("Loops🔄")
 
 # Introduction
 st.markdown("""

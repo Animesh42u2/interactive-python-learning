@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Page Title
-st.title("Master Python Comprehensions 🎨")
+st.title("Comprehensions 🎨")
 st.markdown("""
 Python comprehensions are a concise way to create lists, dictionaries, sets, and generators.  
 They make your code cleaner, more efficient, and easier to read. Let’s explore comprehensions interactively! 🚀

@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Page Title
-st.title("Learn Python Data Structures 🗃️")
+st.title("Python Data Structures 🗃️")
 st.markdown("""
 Data structures are essential for organizing and managing data efficiently. Python offers a variety of built-in and advanced data structures to solve problems effectively. Let's dive in! 🚀
 """)

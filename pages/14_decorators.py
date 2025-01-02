@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Page Title
-st.title("Understanding Python Decorators 🎨")
+st.title("Understanding Decorators 🎨")
 st.markdown("""
 Decorators are a powerful and flexible way to modify the behavior of functions or classes in Python.  
 They are widely used in Python frameworks like Flask, Django, and more. Let’s dive in and make decorators fun and interactive! 🚀

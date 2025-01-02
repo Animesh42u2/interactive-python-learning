@@ -1,8 +1,9 @@
 import streamlit as st
 import pandas as pd
+import random
 
 # Page Title
-st.title("Python Syntax & Variables 🚀")
+st.title("Syntax & Variables 🚀")
 
 # Introduction
 st.markdown("""
@@ -38,6 +39,8 @@ st.dataframe(data_types_table)
 
 # Let's Play: Guess the Data Type
 st.markdown("### 🎮 Let's Play: Guess the Data Type!")
+
+# Quiz Data
 quiz_data = [
     ("42", "Integer (int)"),
     ("3.14", "Float (float)"),
@@ -49,11 +52,15 @@ quiz_data = [
     ("True", "Boolean (bool)")
 ]
 
+# Initialize the quiz state in session_state
 if "quiz_question" not in st.session_state:
-    import random
     st.session_state.quiz_question = random.choice(quiz_data)
+if "feedback" not in st.session_state:
+    st.session_state.feedback = ""
 
 quiz_question = st.session_state.quiz_question
+
+# Display the question
 st.write(f"**Question:** What is the data type of this value?")
 st.code(quiz_question[0])
 
@@ -63,15 +70,20 @@ user_answer = st.selectbox(
     ["Integer (int)", "Float (float)", "String (str)", "List", "Tuple", "Set", "Dictionary (dict)", "Boolean (bool)"]
 )
 
+# Handle Answer Submission
 if st.button("Submit Answer"):
     if user_answer == quiz_question[1]:
-        st.success("🎉 Correct! Great job!")
+        st.session_state.feedback = "🎉 Correct! Great job!"
     else:
-        st.error(f"❌ Incorrect. The correct answer is: {quiz_question[1]}")
-
-    # Reset for the next question
+        st.session_state.feedback = f"❌ Incorrect. The correct answer is: {quiz_question[1]}"
+    
+    # Load a new question
     st.session_state.quiz_question = random.choice(quiz_data)
-    st.experimental_rerun()
+    st.rerun()
+
+# Show feedback if available
+if st.session_state.feedback:
+    st.write(st.session_state.feedback)
 
 # Explore Data Types in Detail
 st.markdown("## 🔍 Explore Data Types in Detail")

@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Page Title
-st.title("Mastering Error Handling⚠️")
+st.title("Error Handling⚠️")
 
 st.markdown("""
 Error handling is an essential part of programming.  
